@@ -2,7 +2,7 @@
 title: Tableau Migration SDK
 email: scot.marvin@salesforce.com
 description: Migrate your Tableau Server data to Tableau Cloud
-baseurl: "/migration-sdk-newdocs/"
+baseurl: "/migration-sdk-newdocs"
 # permalink: pretty
 defaults:
   -
