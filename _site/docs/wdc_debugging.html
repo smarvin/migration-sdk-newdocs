@@ -1,0 +1,526 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+      <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Begin Jekyll SEO tag v -->
+
+
+
+<meta name="generator" content="Jekyll v4.3.2" />
+
+
+
+
+
+<meta property="og:locale" content="" />
+
+  <link rel="shortcut icon" type="image/png" href="/webdataconnector/assets/logo.png">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/webdataconnector/assets/css/main.css">
+  <link rel="stylesheet" href="/webdataconnector/assets/css/github-highlight.css">
+
+  <script src="/webdataconnector/assets/js/redirect-to-search.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+
+</head>
+
+<body>
+    <div class="container">
+        <header class="site-header">
+  <div class="wrapper">
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand navbar-brand-logo" href="/webdataconnector/#">Tableau Web Data Connector</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="/webdataconnector/docs/index.html">Docs</a></li>
+            <li><a href="/webdataconnector/docs/api_ref.html">API Reference</a></li>
+            <li><a href="/webdataconnector/community/">Community Connectors</a></li>
+            <li><a target="_blank" href="https://community.tableau.com/s/topic/0TO4T000000QFBJWA4/web-data-connector">Forum</a></li>
+            <li><a href="/webdataconnector/news/">What's New?</a></li>
+            
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="tableauIcon"><a target="_blank" href="http://tableau.com"><img src="/webdataconnector/assets/logo.png" alt="Tableau Developers" class="logo" /></a></li>
+            <li><a target="_blank" href="https://github.com/tableau/webdataconnector"><span class="icon icon--github" title="WDC on GitHub" alt="WDC on GitHub"><svg viewBox="0 0 16 16"><path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/></svg>
+</span></a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+  </div>
+</header>
+
+        <div class="well docs-menu col-xs-12 col-sm-4 col-md-3">
+    <div class="search-container form-group has-feedback">
+    <form id="docs-search">
+        <input type="search" id="search-input" class="custom-search form-control" placeholder="Search the docs..." search-url="/webdataconnector/docs/search.html">
+        <span class="glyphicon glyphicon-search form-control-feedback"></span>
+    </form>
+</div>
+
+
+    <ul class="nav nav-list">
+        <li class="nav-header">Overview</li>
+        <li>
+            <a href="/webdataconnector/docs/index.html">Get Started</a>
+        </li>
+        <li>
+            <a href="/webdataconnector/docs/wdc_tutorial.html">Tutorial</a>
+        </li>
+        <li>
+            <a href="/webdataconnector/docs/wdc_use_in_tableau.html">Use a WDC in Tableau Desktop</a>
+        </li>
+		<li>
+            <a href="/webdataconnector/docs/wdc_use_in_server.html">Use a WDC in Tableau Server</a>
+        </li>
+
+        <li class="nav-header">Basic Concepts</li>
+        <li>
+            <a href="/webdataconnector/docs/wdc_phases.html">Lifecycle and Phases</a>
+        </li>
+        <li>
+            <a href="/webdataconnector/docs/wdc_library_versions.html">API Versions</a>
+        </li>
+        <li>
+            <a href="/webdataconnector/docs/wdc_samples.html">Samples</a>
+        </li>
+        <li>
+            <a href="/webdataconnector/docs/wdc_debugging.html">Debugging in the Simulator and Tableau</a>
+        </li>
+        <li>
+            <a href="/webdataconnector/docs/wdc_hosting_and_submissions.html">Hosting and Submitting to Community Portal</a>
+        </li>
+
+        <li class="nav-header">Advanced Concepts</li>
+        <li>
+            <a href="/webdataconnector/docs/wdc_multi_table_tutorial.html">Multiple Tables Tutorial</a>
+        </li>
+        <li>
+            <a href="/webdataconnector/docs/wdc_oauth_tutorial.html">Node.js Proxy with OAuth Tutorial</a>
+        </li>
+        <li>
+            <a href="/webdataconnector/docs/wdc_standard_connections.html">Standard Connections</a>
+        </li>
+        <li>
+            <a href="/webdataconnector/docs/wdc_join_filtering.html">Join Filtering</a>
+        </li>
+        <li>
+            <a href="/webdataconnector/docs/wdc_custom_init_and_shutdown.html">Custom Initialization and Shutdown</a>
+        </li>
+        <li>
+            <a href="/webdataconnector/docs/wdc_get_data.html">Get Data: Best Practices</a>
+        </li>
+        <li>
+            <a href="/webdataconnector/docs/wdc_incremental_refresh.html">Incremental Refresh</a>
+        </li>
+        <li>
+            <a href="/webdataconnector/docs/wdc_authentication.html">Authentication</a>
+        </li>
+        <li>
+            <a href="/webdataconnector/docs/wdc_cors.html">Working with CORS</a>
+        </li>
+
+        <li class="nav-header">Reference</li>
+        <li>
+            <a href="/webdataconnector/docs/wdc_resources.html">Resources</a>
+        </li>
+        <li>
+            <a href="/webdataconnector/docs/wdc_ref_date_formats.html">Supported Date Formats</a>
+        </li>
+        <li>
+            <a href="/webdataconnector/docs/wdc_faq.html">FAQ</a>
+        </li>
+		    <li>
+		    <a href="/webdataconnector/docs/wdc_upgrade.html">Upgrading from WDC Version 1.x</a>
+        </li>
+        <li>
+		    <a href="/webdataconnector/docs/wdc_webengine.html">Troubleshoot WDC WebEngine Issues</a>
+		   </li>
+           <li>
+		    <a href="/webdataconnector/docs/wdc_about.html">About Tableau Help</a>
+		   </li>
+    </ul>
+</div>
+
+
+        <div class="content .col-xs-12 .col-sm-8 .col-md-9">
+            <h1>Debugging in the Simulator and Tableau</h1>
+            <div class="alert alert-info"><p><strong>Important</strong>: Tableau Web Data Connector 2.0 (this version) is being deprecated at Tableau 2023.1 and eventually retired. We will still support WDC 2.0 until its last compatible version of Tableau (Tableau 2022.4) goes End of Life and is no longer supported.</p>
+
+            <p>For information about Tableau Web Data Connector 3.0, see the <a href="https://help.tableau.com/current/api/webdataconnector/en-us/index.html">WDC 3.0 documentation</a>.</p>
+            </div>
+            <div class="edit-container">
+                <a href="https://github.com/tableau/webdataconnector/edit/master/docs/wdc_debugging.md" class="edit-links"><span class="glyphicon glyphicon-pencil"></span> Edit this page</a>
+                &nbsp;
+                <a href="https://github.com/tableau/webdataconnector/issues" class="edit-links"><span class="glyphicon glyphicon-flag"></span> Submit an issue</a>
+            </div>
+            <br />
+            <p>You can use the simulator included with the WDC SDK to develop and debug your connectors more quickly. The simulator
+is a JavaScript application that loads connectors in a similar way to Tableau Desktop. Additionally, starting with Tableau Desktop 2019.4, you can use the <a href="https://developers.google.com/web/tools/chrome-devtools" target="_blank" ref="noopener">Chrome DevTools</a> and the Chromium debugger to debug issues that appear in Tableau Desktop, but not in the simulator. A WDC is a web page that runs in a Chromium-based browser inside of Tableau Desktop.
+In versions of Tableau Desktop prior to 2019.4, you can use a built-in—although, not supported—debugger that you can use to debug WDC issues that appear in those versions of Tableau Desktop.</p>
+
+<p>Use the simulator when you are developing your connector, to set breakpoints in the browser, view network requests, and
+more. Use Tableau Desktop periodically during development to confirm that your connector works the same as in the
+simulator, and then to perform your final testing.</p>
+
+<p>This page includes information about developing and debugging your connectors both in the simulator and in Tableau.</p>
+
+<ul id="markdown-toc">
+  <li><a href="#debugging-simulator" id="markdown-toc-debugging-simulator">Debugging in the simulator</a>    <ul>
+      <li><a href="#simulator-tips" id="markdown-toc-simulator-tips">Simulator tips</a></li>
+      <li><a href="#simulator-caching" id="markdown-toc-simulator-caching">Caching in the simulator</a></li>
+      <li><a href="#browser-tips" id="markdown-toc-browser-tips">General browser debugging tips</a></li>
+    </ul>
+  </li>
+  <li><a href="#debug-chrome" id="markdown-toc-debug-chrome">Debugging a WDC in Tableau Desktop 2019.4 (and later)</a>    <ul>
+      <li><a href="#download-the-chromium-browser" id="markdown-toc-download-the-chromium-browser">Download the Chromium Browser</a></li>
+      <li><a href="#start-tableau-with-remote-debugging-enabled-windows" id="markdown-toc-start-tableau-with-remote-debugging-enabled-windows">Start Tableau with remote debugging enabled (Windows)</a></li>
+      <li><a href="#start-tableau-with-remote-debugging-enabled-macos" id="markdown-toc-start-tableau-with-remote-debugging-enabled-macos">Start Tableau with remote debugging enabled (macOS)</a></li>
+      <li><a href="#debugging-a-wdc-in-tableau-desktop-using-chromium" id="markdown-toc-debugging-a-wdc-in-tableau-desktop-using-chromium">Debugging a WDC in Tableau Desktop using Chromium</a></li>
+      <li><a href="#debug-your-wdc-initial-startup-code" id="markdown-toc-debug-your-wdc-initial-startup-code">Debug your WDC initial startup code</a></li>
+    </ul>
+  </li>
+  <li><a href="#debugging-tableau" id="markdown-toc-debugging-tableau">Debugging a WDC in Tableau Desktop 2019.3 (and earlier)</a></li>
+</ul>
+
+<h2 id="debugging-simulator">Debugging in the simulator</h2>
+
+<p>To set up and run the simulator, follow the instructions in the <a href="/webdataconnector/docs">Get Started</a> section.</p>
+
+<p>When you run a connector in the simulator, only the <code class="language-plaintext highlighter-rouge">getSchema</code> and <code class="language-plaintext highlighter-rouge">getData</code> parts of your connector code
+run in the simulator window.  The interactive phase and authentication phases run in a separate window. This means that
+messages that you print with <code class="language-plaintext highlighter-rouge">console.log</code> will appear in different browser consoles.</p>
+
+<p>To print messages from both windows to the console for the main simulator window, use <code class="language-plaintext highlighter-rouge">tableau.log</code>. For example, you
+might enter the following in your code:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">tableau</span><span class="p">.</span><span class="nf">log</span><span class="p">(</span><span class="dl">"</span><span class="s2">My console message goes here!</span><span class="dl">"</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p><img src="/webdataconnector/assets/wdc_simulator_new_first_open.png" alt="&quot;The simulator user interface.&quot;" /></p>
+
+<h3 id="simulator-tips">Simulator tips</h3>
+
+<ul>
+  <li>
+    <p>By default, the test web server runs on port 8888. To change the port number, edit the <code class="language-plaintext highlighter-rouge">http-server</code> script in the
+<code class="language-plaintext highlighter-rouge">package.json</code> file.  For example, you might enter the following to change the port to 8000:</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>"http-server": "export SERVER_PORT=8000 || set SERVER_PORT=8000 &amp;&amp; node ./index.js"
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>To make it easier to load files into the simulator, keep the simulator and web data connector <code class="language-plaintext highlighter-rouge">.html</code> files that you are
+testing in the same folder.</p>
+  </li>
+</ul>
+
+<div class="alert alert-info">
+
+<p><b>Note: </b>Tableau 2019.4 (and later) embeds the Qt WebEngine browser into the product to display your connector pages. Qt WebEngine is a Chromium-based browser that provides support for HTML5 and other modern features, including the ability to use the Chromium and Chrome DevTools for debugging.</p>
+
+<p>Tableau Desktop 2019.3 (and earlier) embeds the Qt Webkit browser. This browser might lack some of the features of modern browsers, including specific HTML5 features. For more information on browser support, <a href="http://doc.qt.io/qt-5/whatsnew57.html" target="_blank"> see the features in Qt 5.7</a>, which is the version used by Tableau (10.3 to 2019.3). You might also want to see the Qt Webkit documentation on HTML5 support and the <a href="https://wiki.qt.io/Qt_Webkit_HTML5_Score" target="_blank">Qt Webkit HTML5 Score
+</a>.</p>
+
+</div>
+
+<h3 id="simulator-caching">Caching in the simulator</h3>
+
+<p>If changes to your connector do not appear to take effect in the simulator, the browser might be caching a previous version of your
+connector. Here are some ways to work around caching issues:</p>
+
+<ul>
+  <li>
+    <p>In some browsers, you can press <strong>Ctrl+Shift+R</strong> or <strong>Cmd+Shift+R</strong> to clear the cache for the current page and reload
+it.</p>
+  </li>
+  <li>
+    <p>Open the simulator in an incognito window which does not store cookies or cache pages. Note that the list of recent
+connectors will not be stored if cookies are disabled.</p>
+  </li>
+  <li>
+    <p>In Google Chrome, you can disable caching while the developer tools are open.</p>
+
+    <ol>
+      <li>
+        <p>Open Chrome Developer Tools.</p>
+      </li>
+      <li>
+        <p>Press <strong>F1</strong> to view the settings.</p>
+      </li>
+      <li>
+        <p>On the <strong>Preferences</strong> tab, under <strong>Network</strong>, select the <strong>Disable caching</strong> option.</p>
+      </li>
+    </ol>
+  </li>
+</ul>
+
+<h3 id="browser-tips">General browser debugging tips</h3>
+
+<ul>
+  <li>
+    <p>Open the developer tools console for the browser.</p>
+
+    <p>For example, in Google Chrome press <strong>Ctrl</strong>+<strong>Shift</strong>+<strong>I</strong> on Windows or <strong>Command</strong>+<strong>Option</strong>+<strong>I</strong> on the Mac to open the tools pane,
+and then select the <strong>Console</strong> tab. In this console, you can see all the results of
+various console.log statements.  The console also displays output from the <a href="/webdataconnector/docs/api_ref#webdataconnectorapi.tableau.log">tableau.log</a> and <a href="/webdataconnector/docs/api_ref#webdataconnectorapi.tableau.abortwitherror">tableau.abortWithError</a> functions.</p>
+
+    <p>This is a good place to check for errors in case anything goes wrong.  The console will display information about
+run-time errors (unhandled exceptions) that occur while your code is running. If an error occurs, the JavaScript
+engine in the browser throws an error and the error message is displayed in the console.</p>
+  </li>
+  <li>
+    <p>Use a debugger to step through your code.</p>
+
+    <p>Most browsers include a debugger as part of their developer tools.  You can set breakpoints in your code in the
+debugger or include JavaScript <code class="language-plaintext highlighter-rouge">debugger</code> statements. When the web data connector runs and the browser’s developer
+tools are open, code execution stops at breakpoints or <code class="language-plaintext highlighter-rouge">debugger</code> statements and you can examine variables.  For an
+overview of debugging tools, see <a href="http://www.w3schools.com/js/js_debugging.asp">JavaScript Debugging</a> on the
+W3CSchools.com site.</p>
+  </li>
+</ul>
+
+<hr />
+
+<h2 id="debug-chrome">Debugging a WDC in Tableau Desktop 2019.4 (and later)</h2>
+
+<p>Starting with Tableau 2019.4, you can use the Chromium browser and the <a href="https://developers.google.com/web/tools/chrome-devtools" target="_blank" ref="noopener">Chrome DevTools</a> to debug your WDC while it is running in Tableau Desktop. This means you can use the Chromium browser, instead of the unsupported “Beta” debugger that was built into Tableau Desktop.</p>
+
+<h3 id="download-the-chromium-browser">Download the Chromium Browser</h3>
+
+<p>To debug your WDC, you’ll need to use a Chromium-based browser (Chromium is the open-source version of Chrome). In some cases you could use Chrome, but because of version incompatibilities in the debugging protocol, we recommend using specific builds of Chromium, which matches the version of the browser running inside Tableau. Just download and unzip the file and run <code class="language-plaintext highlighter-rouge">chrome.exe</code> (Windows) or <code class="language-plaintext highlighter-rouge">chromium</code> (macOS).</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Tableau Desktop version</th>
+      <th>Chromium version</th>
+      <th>Chrome version</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Prior to 2019.4</td>
+      <td>Not Available</td>
+      <td>Not available</td>
+    </tr>
+    <tr>
+      <td>2019.4 and later</td>
+      <td>Chromium version 79 or earlier (for example, 79.0.3945.0)</td>
+      <td>Chrome version 79 or earlier.</td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>Chromium downloads for debugging Tableau 2019.1 and later</strong></p>
+
+<ul>
+  <li>
+    <p><a href="https://commondatastorage.googleapis.com/chromium-browser-snapshots/index.html?prefix=Win_x64/706915/">Chromium for Windows (<code class="language-plaintext highlighter-rouge">chrome-win.zip</code>) (79.0.3945.0)</a></p>
+  </li>
+  <li>
+    <p><a href="https://commondatastorage.googleapis.com/chromium-browser-snapshots/index.html?prefix=Mac/706915/">Chromium for macOS (<code class="language-plaintext highlighter-rouge">chrome-mac.zip</code>) (79.0.3945.0)</a></p>
+  </li>
+</ul>
+
+<div class="alert alert-info"><b>Note </b> If you are using Tableau 2019.1 or later, you can debug WDCs in Tableau Desktop using certain versions of Chrome (versions prior to 80). Currently, you can't use Chrome version 80 (or later) for debugging your WDC.</div>
+
+<h3 id="start-tableau-with-remote-debugging-enabled-windows">Start Tableau with remote debugging enabled (Windows)</h3>
+
+<ol>
+  <li>
+    <p>Open a command prompt.</p>
+  </li>
+  <li>
+    <p>Navigate to the Tableau Desktop directory.
+Replace <code class="language-plaintext highlighter-rouge">&lt;version&gt;</code> with the version of Tableau you are using (for example,<code class="language-plaintext highlighter-rouge">Tableau 2019.4</code>).</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> cd C:\Program Files\Tableau\Tableau &lt;version&gt;\bin\
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Start Tableau with the remote debugging option.</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> tableau.exe --remote-debugging-port=9000
+</code></pre></div>    </div>
+
+    <p>This command enables remote debugging of your WDC for this session of Tableau.</p>
+
+    <p><strong>Note:</strong> The remote debugging port (for example, <code class="language-plaintext highlighter-rouge">9000</code>) must match the port address you use with the Chrome browser for debugging. This is <em>not</em> the HTTP port that you are using to host your WDC.</p>
+  </li>
+</ol>
+
+<h3 id="start-tableau-with-remote-debugging-enabled-macos">Start Tableau with remote debugging enabled (macOS)</h3>
+
+<ol>
+  <li>
+    <p>Open a Terminal window.</p>
+  </li>
+  <li>
+    <p>Start Tableau using the following command.
+<br /> Replace <code class="language-plaintext highlighter-rouge">&lt;version&gt;</code> with the version of Tableau you are using (for example,<code class="language-plaintext highlighter-rouge">2019.4.app</code>).</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code> open /Applications/Tableau\ Desktop\ &lt;version&gt;.app --args --remote-debugging-port=9000
+
+</code></pre></div>    </div>
+
+    <p>This command enables remote debugging of your WDC for this session of Tableau.</p>
+
+    <p><strong>Note:</strong> The remote debugging port (for example, <code class="language-plaintext highlighter-rouge">9000</code>) must match the port address you use with Chrome for debugging. This is <em>not</em> the HTTP port that you are using to host your WDC.</p>
+  </li>
+</ol>
+
+<h3 id="debugging-a-wdc-in-tableau-desktop-using-chromium">Debugging a WDC in Tableau Desktop using Chromium</h3>
+
+<p>After you enable debugging in Tableau, you can start debugging your WDC with the Chrome DevTools.</p>
+
+<ol>
+  <li>
+    <p>Connect to a web data connector. In Tableau, open a connection to the Web Data Connector. In the WDC dialog box, enter the URL of the WDC you want to debug, and press <strong>Enter</strong>. After your WDC landing page is loaded, you will want to wait before interacting with the page so you can start the Chrome debugger and set breakpoints.</p>
+  </li>
+  <li>
+    <p>Start Chrome and set the URL to <a href="http://localhost:9000"><code class="language-plaintext highlighter-rouge">http://localhost:9000</code></a><br />
+This will bring up the page selector UI. The port (for example, <code class="language-plaintext highlighter-rouge">9000</code>) must match the port address you specified as the remote debugging port when you started Tableau.</p>
+  </li>
+  <li>
+    <p>In the Chrome Browser, select the WDC you want to debug from this page (under <strong>Inspectable pages</strong>).</p>
+
+    <p>Note that the name of the WDC is based on the title of the web page that was loaded for the WDC.</p>
+
+    <p><img src="/webdataconnector/assets/select_wdc_chrome_dbg.png" alt="Remote Debugging" height="50%" width="50%" /></p>
+  </li>
+  <li>
+    <p>When the Chrome debugger is connected, switch to the <strong>Sources</strong> tab and set a breakpoint (or breakpoints) in your WDC source code (for example, on the <code class="language-plaintext highlighter-rouge">getSchema</code> and <code class="language-plaintext highlighter-rouge">getData</code> methods).</p>
+  </li>
+  <li>
+    <p>Switch back to Tableau and interact with the WDC. The WDC will run until it hits the breakpoint.</p>
+  </li>
+  <li>
+    <p>Switch back to the Chrome browser and use the developer tools to step through your source code, examine variables, and watch the Console for messages.</p>
+
+    <p><img src="/webdataconnector/assets/wdc_chrome_source_breakpoint.png" alt="" height="75%" width="75%" /></p>
+  </li>
+</ol>
+
+<hr />
+
+<h3 id="debug-your-wdc-initial-startup-code">Debug your WDC initial startup code</h3>
+
+<p>If you want to debug the initial startup of your WDC, you can set an Event Listener Breakpoint to break on the first statement whenever a JavaScript file is loaded. Then you can open the WDC home page in Tableau and connect the debugger. When you load your WDC, the debugger will break on the first module.</p>
+
+<ol>
+  <li>
+    <p>Start Tableau in debugging mode and open the Web Data Connector dialog box.</p>
+  </li>
+  <li>
+    <p>Switch to the the Chrome browser and use the developer tools (<code class="language-plaintext highlighter-rouge">localhost:9000</code>) and select the WDC Home page.</p>
+
+    <p><img src="/webdataconnector/assets/select_wdc_home_chrome_dbg.png" alt="" height="50%" width="50%" /></p>
+  </li>
+  <li>
+    <p>Click the <strong>Sources</strong> pane in the debugger, and then click <strong>Event Listener Breakpoints</strong>. Under <strong>Script</strong>, select <strong>Script First Statement</strong>.</p>
+
+    <p><img src="/webdataconnector/assets/chrome_breakpoint_script.png" alt="" height="25%" width="25%" /></p>
+  </li>
+  <li>
+    <p>Go back to Tableau and enter the URL for your WDC. When the WDC loads, the debugger will break on the first module of your source code. Use the Chrome Developer Tools to step through the start up code.</p>
+  </li>
+</ol>
+
+<hr />
+
+<h2 id="debugging-tableau">Debugging a WDC in Tableau Desktop 2019.3 (and earlier)</h2>
+
+<p>Tableau Desktop includes a built-in debugger that you can use to test your connectors. Use the built-in debugger when
+you encounter differences that you cannot debug in the simulator.</p>
+
+<p><strong>Important</strong>:</p>
+
+<ul>
+  <li>The built-in debugger only runs on Windows.</li>
+  <li>It is provided as-is and without official support by Tableau.</li>
+  <li>The debugger communicates with Tableau Desktop synchronously and therefore might appear unresponsive at times.</li>
+</ul>
+
+<p>To run the built-in debugger, complete the following steps:</p>
+
+<ol>
+  <li>
+    <p>Open a command prompt.</p>
+  </li>
+  <li>
+    <p>Navigate to the Tableau Desktop directory.</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>cd "C:\Program Files\Tableau\Tableau &lt;version&gt;\bin\"
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Run Tableau Desktop with the debugging flag:</p>
+
+    <div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>tableau.exe -DDebugWDC
+</code></pre></div>    </div>
+  </li>
+  <li>
+    <p>Connect to a web data connector.</p>
+  </li>
+  <li>
+    <p>Interact with your connector and start the data gathering phase.</p>
+
+    <p>The built-in debugger loads.</p>
+  </li>
+  <li>
+    <p>The first time that you use the debugger, click the <strong>Sources</strong> tab, select <strong>Always enable</strong>, and click <strong>Enable
+Debugging</strong>.</p>
+
+    <p><img src="/webdataconnector/assets/debugger_enable.png" alt="Enable debugging on the Sources tab." /></p>
+  </li>
+  <li>
+    <p>Click the <strong>Show sources</strong> button to display a list of the files used in your connector.</p>
+
+    <p><img src="/webdataconnector/assets/debugger_show_sources.png" alt="View source files." /></p>
+  </li>
+  <li>
+    <p>Select a file to open it.</p>
+  </li>
+  <li>
+    <p>To set a breakpoint, click on a line number.</p>
+  </li>
+  <li>
+    <p>Press F8 to continue running your connector.</p>
+
+    <p><img src="/webdataconnector/assets/debugger_breakpoint.png" alt="Use breakpoints to debug your connector." /></p>
+  </li>
+</ol>
+
+
+            <!-- Footer -->
+<footer>
+    <div class="row">
+            <hr class="footer-hr">
+            <p>This site is open source. Suggestions and pull requests are welcome on our <a href="https://github.com/tableau/webdataconnector">GitHub page</a>.</p>
+            <p><a href="https://www.tableau.com/en-us/legal" class="aLegal">LEGAL</a> <a href="https://www.salesforce.com/company/privacy/" class="aLegal">PRIVACY</a> &copy; 2003&ndash;<script>document.write(new Date().getFullYear())</script> TABLEAU SOFTWARE LLC. ALL RIGHTS RESERVED</p>
+            <sub>Documentation last generated on: 2023-03-07 13:27:13 -0800</sub>
+    </div>
+</footer>
+
+        </div>
+    </div>
+</body>
+
+</html>

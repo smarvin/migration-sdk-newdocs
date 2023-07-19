@@ -1,0 +1,26 @@
+# Site settings
+title: Tableau Migration SDK
+email: scot.marvin@salesforce.com
+description: Migrate your Tableau Server data to Tableau Cloud
+baseurl: "/migration-sdk-newdocs/"
+# permalink: pretty
+defaults:
+  -
+    scope:
+      path: "" # Apply to all files
+    values:
+      layout: "default"
+
+# Build settings
+markdown: kramdown
+highlighter: rouge
+
+kramdown:
+    toc_levels: 1..3
+
+# Include SEO file for Google rich results
+gems:
+  - jekyll-seo-tag
+
+# Exclude
+exclude: ['node_modules', 'vendor']

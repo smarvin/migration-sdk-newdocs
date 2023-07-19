@@ -1,0 +1,522 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+      <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Begin Jekyll SEO tag v -->
+
+
+
+<meta name="generator" content="Jekyll v4.3.2" />
+
+
+
+
+
+<meta property="og:locale" content="" />
+
+  <link rel="shortcut icon" type="image/png" href="/webdataconnector/assets/logo.png">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/webdataconnector/assets/css/main.css">
+  <link rel="stylesheet" href="/webdataconnector/assets/css/github-highlight.css">
+
+  <script src="/webdataconnector/assets/js/redirect-to-search.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+
+</head>
+
+<body>
+    <div class="container">
+        <header class="site-header">
+  <div class="wrapper">
+    <nav class="navbar navbar-default navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand navbar-brand-logo" href="/webdataconnector/#">Tableau Web Data Connector</a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav">
+            <li><a href="/webdataconnector/docs/index.html">Docs</a></li>
+            <li><a href="/webdataconnector/docs/api_ref.html">API Reference</a></li>
+            <li><a href="/webdataconnector/community/">Community Connectors</a></li>
+            <li><a target="_blank" href="https://community.tableau.com/s/topic/0TO4T000000QFBJWA4/web-data-connector">Forum</a></li>
+            <li><a href="/webdataconnector/news/">What's New?</a></li>
+            
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="tableauIcon"><a target="_blank" href="http://tableau.com"><img src="/webdataconnector/assets/logo.png" alt="Tableau Developers" class="logo" /></a></li>
+            <li><a target="_blank" href="https://github.com/tableau/webdataconnector"><span class="icon icon--github" title="WDC on GitHub" alt="WDC on GitHub"><svg viewBox="0 0 16 16"><path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/></svg>
+</span></a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div>
+    </nav>
+  </div>
+</header>
+
+        <div class="well docs-menu col-xs-12 col-sm-4 col-md-3">
+    <div class="search-container form-group has-feedback">
+    <form id="docs-search">
+        <input type="search" id="search-input" class="custom-search form-control" placeholder="Search the docs..." search-url="/webdataconnector/docs/search.html">
+        <span class="glyphicon glyphicon-search form-control-feedback"></span>
+    </form>
+</div>
+
+
+    <ul class="nav nav-list">
+        <li class="nav-header">Overview</li>
+        <li>
+            <a href="/webdataconnector/docs/index.html">Get Started</a>
+        </li>
+        <li>
+            <a href="/webdataconnector/docs/wdc_tutorial.html">Tutorial</a>
+        </li>
+        <li>
+            <a href="/webdataconnector/docs/wdc_use_in_tableau.html">Use a WDC in Tableau Desktop</a>
+        </li>
+		<li>
+            <a href="/webdataconnector/docs/wdc_use_in_server.html">Use a WDC in Tableau Server</a>
+        </li>
+
+        <li class="nav-header">Basic Concepts</li>
+        <li>
+            <a href="/webdataconnector/docs/wdc_phases.html">Lifecycle and Phases</a>
+        </li>
+        <li>
+            <a href="/webdataconnector/docs/wdc_library_versions.html">API Versions</a>
+        </li>
+        <li>
+            <a href="/webdataconnector/docs/wdc_samples.html">Samples</a>
+        </li>
+        <li>
+            <a href="/webdataconnector/docs/wdc_debugging.html">Debugging in the Simulator and Tableau</a>
+        </li>
+        <li>
+            <a href="/webdataconnector/docs/wdc_hosting_and_submissions.html">Hosting and Submitting to Community Portal</a>
+        </li>
+
+        <li class="nav-header">Advanced Concepts</li>
+        <li>
+            <a href="/webdataconnector/docs/wdc_multi_table_tutorial.html">Multiple Tables Tutorial</a>
+        </li>
+        <li>
+            <a href="/webdataconnector/docs/wdc_oauth_tutorial.html">Node.js Proxy with OAuth Tutorial</a>
+        </li>
+        <li>
+            <a href="/webdataconnector/docs/wdc_standard_connections.html">Standard Connections</a>
+        </li>
+        <li>
+            <a href="/webdataconnector/docs/wdc_join_filtering.html">Join Filtering</a>
+        </li>
+        <li>
+            <a href="/webdataconnector/docs/wdc_custom_init_and_shutdown.html">Custom Initialization and Shutdown</a>
+        </li>
+        <li>
+            <a href="/webdataconnector/docs/wdc_get_data.html">Get Data: Best Practices</a>
+        </li>
+        <li>
+            <a href="/webdataconnector/docs/wdc_incremental_refresh.html">Incremental Refresh</a>
+        </li>
+        <li>
+            <a href="/webdataconnector/docs/wdc_authentication.html">Authentication</a>
+        </li>
+        <li>
+            <a href="/webdataconnector/docs/wdc_cors.html">Working with CORS</a>
+        </li>
+
+        <li class="nav-header">Reference</li>
+        <li>
+            <a href="/webdataconnector/docs/wdc_resources.html">Resources</a>
+        </li>
+        <li>
+            <a href="/webdataconnector/docs/wdc_ref_date_formats.html">Supported Date Formats</a>
+        </li>
+        <li>
+            <a href="/webdataconnector/docs/wdc_faq.html">FAQ</a>
+        </li>
+		    <li>
+		    <a href="/webdataconnector/docs/wdc_upgrade.html">Upgrading from WDC Version 1.x</a>
+        </li>
+        <li>
+		    <a href="/webdataconnector/docs/wdc_webengine.html">Troubleshoot WDC WebEngine Issues</a>
+		   </li>
+           <li>
+		    <a href="/webdataconnector/docs/wdc_about.html">About Tableau Help</a>
+		   </li>
+    </ul>
+</div>
+
+
+        <div class="content .col-xs-12 .col-sm-8 .col-md-9">
+            <h1>Join Filtering</h1>
+            <div class="alert alert-info"><p><strong>Important</strong>: Tableau Web Data Connector 2.0 (this version) is being deprecated at Tableau 2023.1 and eventually retired. We will still support WDC 2.0 until its last compatible version of Tableau (Tableau 2022.4) goes End of Life and is no longer supported.</p>
+
+            <p>For information about Tableau Web Data Connector 3.0, see the <a href="https://help.tableau.com/current/api/webdataconnector/en-us/index.html">WDC 3.0 documentation</a>.</p>
+            </div>
+            <div class="edit-container">
+                <a href="https://github.com/tableau/webdataconnector/edit/master/docs/wdc_join_filtering.md" class="edit-links"><span class="glyphicon glyphicon-pencil"></span> Edit this page</a>
+                &nbsp;
+                <a href="https://github.com/tableau/webdataconnector/issues" class="edit-links"><span class="glyphicon glyphicon-flag"></span> Submit an issue</a>
+            </div>
+            <br />
+            <p>When you connect to multiple tables of data with a web data connector, you can filter the data from one table based on the data from another table.
+Said another way, you can make one table dependent on the data returned from another table.</p>
+
+<p>Use join filtering to improve the efficiency of your connectors by getting only the data that you want.
+Otherwise, by default, Tableau gets all data from all tables.</p>
+
+<p>Before you set up join filtering, ensure that you have a working web data connector for your tables. For more information
+on getting data from multiple tables, see the <a href="/webdataconnector/docs/wdc_multi_table_tutorial">Multiple Tables Tutorial</a>.</p>
+
+<p>Once you have a working connector for multiple tables, step through the following example to understand join filtering (or review the example connector at the end).</p>
+
+<ul id="markdown-toc">
+  <li><a href="#create-a-sample-schema" id="markdown-toc-create-a-sample-schema">Create a sample schema</a></li>
+  <li><a href="#specify-schema-properties" id="markdown-toc-specify-schema-properties">Specify schema properties</a></li>
+  <li><a href="#get-data-for-tables" id="markdown-toc-get-data-for-tables">Get data for tables</a></li>
+  <li><a href="#full-example" id="markdown-toc-full-example">Full example</a></li>
+</ul>
+
+<div class="alert alert-info">
+    <b>Important:</b> Join filtering is only supported in WDC versions 2.2 and later.
+</div>
+
+<h3 id="create-a-sample-schema">Create a sample schema</h3>
+
+<p>In this example, you create a connector for blog post data where you join two tables: a users table and a posts table.
+You can use join filtering to first get data from the users table, then only get post data that corresponds to certain users.</p>
+
+<p>Here is an example schema for the users table and posts table:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">users_cols</span> <span class="o">=</span> <span class="p">[{</span>
+    <span class="na">id</span><span class="p">:</span> <span class="dl">"</span><span class="s2">id</span><span class="dl">"</span><span class="p">,</span>
+    <span class="na">dataType</span><span class="p">:</span> <span class="nx">tableau</span><span class="p">.</span><span class="nx">dataTypeEnum</span><span class="p">.</span><span class="nx">string</span>
+<span class="p">},</span> <span class="p">{</span>
+    <span class="na">id</span><span class="p">:</span> <span class="dl">"</span><span class="s2">name</span><span class="dl">"</span><span class="p">,</span>
+    <span class="na">alias</span><span class="p">:</span> <span class="dl">"</span><span class="s2">name</span><span class="dl">"</span><span class="p">,</span>
+    <span class="na">dataType</span><span class="p">:</span> <span class="nx">tableau</span><span class="p">.</span><span class="nx">dataTypeEnum</span><span class="p">.</span><span class="nx">string</span>
+<span class="p">}];</span>
+
+<span class="kd">var</span> <span class="nx">usersTable</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="na">id</span><span class="p">:</span> <span class="dl">"</span><span class="s2">users</span><span class="dl">"</span><span class="p">,</span>
+    <span class="na">alias</span><span class="p">:</span> <span class="dl">"</span><span class="s2">User Data</span><span class="dl">"</span><span class="p">,</span>
+    <span class="na">columns</span><span class="p">:</span> <span class="nx">users_cols</span>
+<span class="p">};</span>
+
+<span class="kd">var</span> <span class="nx">posts_cols</span> <span class="o">=</span> <span class="p">[{</span>
+    <span class="na">id</span><span class="p">:</span> <span class="dl">"</span><span class="s2">id</span><span class="dl">"</span><span class="p">,</span>
+    <span class="na">dataType</span><span class="p">:</span> <span class="nx">tableau</span><span class="p">.</span><span class="nx">dataTypeEnum</span><span class="p">.</span><span class="nx">string</span>
+<span class="p">},</span> <span class="p">{</span>
+    <span class="na">id</span><span class="p">:</span> <span class="dl">"</span><span class="s2">userId</span><span class="dl">"</span><span class="p">,</span>
+    <span class="na">alias</span><span class="p">:</span> <span class="dl">"</span><span class="s2">userId</span><span class="dl">"</span><span class="p">,</span>
+    <span class="na">dataType</span><span class="p">:</span> <span class="nx">tableau</span><span class="p">.</span><span class="nx">dataTypeEnum</span><span class="p">.</span><span class="nx">string</span>
+<span class="p">},</span> <span class="p">{</span>
+    <span class="na">id</span><span class="p">:</span> <span class="dl">"</span><span class="s2">title</span><span class="dl">"</span><span class="p">,</span>
+    <span class="na">alias</span><span class="p">:</span> <span class="dl">"</span><span class="s2">title</span><span class="dl">"</span><span class="p">,</span>
+    <span class="na">dataType</span><span class="p">:</span> <span class="nx">tableau</span><span class="p">.</span><span class="nx">dataTypeEnum</span><span class="p">.</span><span class="nx">string</span>
+<span class="p">}];</span>
+
+<span class="kd">var</span> <span class="nx">postsTable</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="na">id</span><span class="p">:</span> <span class="dl">"</span><span class="s2">posts</span><span class="dl">"</span><span class="p">,</span>
+    <span class="na">alias</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Post Data</span><span class="dl">"</span><span class="p">,</span>
+    <span class="na">columns</span><span class="p">:</span> <span class="nx">posts_cols</span>
+<span class="p">};</span>
+
+</code></pre></div></div>
+
+<h3 id="specify-schema-properties">Specify schema properties</h3>
+
+<p>Now that you have a sample schema, you can specify which tables you want join and which columns you want to use for the primary to foreign key relationship.
+To filter posts by user, set the following schema properties:</p>
+
+<ul>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">joinOnly</code>. (Optional) Whether you want to make join filtering required for this table.
+If you set this value to true, you cannot connect to the table without first connecting to the other table.
+For example, if you set this to true for the <code class="language-plaintext highlighter-rouge">posts</code> table, the <code class="language-plaintext highlighter-rouge">posts</code> table is disabled in Tableau unless you select the <code class="language-plaintext highlighter-rouge">users</code> table first.</p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">filterable</code>. Set to true for the column that you want to use for filtering.
+Because we want the <code class="language-plaintext highlighter-rouge">posts</code> tables to be filtered on its <code class="language-plaintext highlighter-rouge">userId</code> column, you want to set this to true for the <code class="language-plaintext highlighter-rouge">userId</code> column of the <code class="language-plaintext highlighter-rouge">posts</code> table.</p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">foreignKey</code>. Specify the <code class="language-plaintext highlighter-rouge">tableId</code> and <code class="language-plaintext highlighter-rouge">columnId</code> to create the primary to foreign key relationship.
+The <code class="language-plaintext highlighter-rouge">posts</code> table <code class="language-plaintext highlighter-rouge">userId</code> column represents a foreign key to the <code class="language-plaintext highlighter-rouge">users</code> table <code class="language-plaintext highlighter-rouge">id</code> primary key. Set the <code class="language-plaintext highlighter-rouge">foreignKey</code> property on the <code class="language-plaintext highlighter-rouge">userId</code> column of the <code class="language-plaintext highlighter-rouge">posts</code> table and point to the primary key:  <code class="language-plaintext highlighter-rouge">foreignKey: { "tableId": "users", "columnId": "id" }</code>.  You can have many foreignKey attributes point to the same primary key.</p>
+  </li>
+</ul>
+
+<p>The schema below has these properties already set:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">users_cols</span> <span class="o">=</span> <span class="p">[{</span>
+    <span class="na">id</span><span class="p">:</span> <span class="dl">"</span><span class="s2">id</span><span class="dl">"</span><span class="p">,</span>
+    <span class="na">dataType</span><span class="p">:</span> <span class="nx">tableau</span><span class="p">.</span><span class="nx">dataTypeEnum</span><span class="p">.</span><span class="nx">string</span><span class="p">,</span>
+<span class="p">},</span> <span class="p">{</span>
+    <span class="na">id</span><span class="p">:</span> <span class="dl">"</span><span class="s2">name</span><span class="dl">"</span><span class="p">,</span>
+    <span class="na">alias</span><span class="p">:</span> <span class="dl">"</span><span class="s2">name</span><span class="dl">"</span><span class="p">,</span>
+    <span class="na">dataType</span><span class="p">:</span> <span class="nx">tableau</span><span class="p">.</span><span class="nx">dataTypeEnum</span><span class="p">.</span><span class="nx">string</span>
+<span class="p">}];</span>
+
+<span class="kd">var</span> <span class="nx">usersTable</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="na">id</span><span class="p">:</span> <span class="dl">"</span><span class="s2">users</span><span class="dl">"</span><span class="p">,</span>
+    <span class="na">alias</span><span class="p">:</span> <span class="dl">"</span><span class="s2">User Data</span><span class="dl">"</span><span class="p">,</span>
+    <span class="na">columns</span><span class="p">:</span> <span class="nx">users_cols</span>
+<span class="p">};</span>
+
+<span class="c1">// Schema for posts</span>
+<span class="kd">var</span> <span class="nx">posts_cols</span> <span class="o">=</span> <span class="p">[{</span>
+    <span class="na">id</span><span class="p">:</span> <span class="dl">"</span><span class="s2">id</span><span class="dl">"</span><span class="p">,</span>
+    <span class="na">dataType</span><span class="p">:</span> <span class="nx">tableau</span><span class="p">.</span><span class="nx">dataTypeEnum</span><span class="p">.</span><span class="nx">string</span>
+<span class="p">},</span> <span class="p">{</span>
+    <span class="na">id</span><span class="p">:</span> <span class="dl">"</span><span class="s2">userId</span><span class="dl">"</span><span class="p">,</span>
+    <span class="na">alias</span><span class="p">:</span> <span class="dl">"</span><span class="s2">userId</span><span class="dl">"</span><span class="p">,</span>
+    <span class="na">dataType</span><span class="p">:</span> <span class="nx">tableau</span><span class="p">.</span><span class="nx">dataTypeEnum</span><span class="p">.</span><span class="nx">string</span><span class="p">,</span>
+    <span class="na">filterable</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+    <span class="na">foreignKey</span><span class="p">:</span> <span class="p">{</span>
+        <span class="dl">"</span><span class="s2">tableId</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">users</span><span class="dl">"</span><span class="p">,</span>
+        <span class="dl">"</span><span class="s2">columnId</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">id</span><span class="dl">"</span>
+    <span class="p">}</span>
+<span class="p">},</span> <span class="p">{</span>
+    <span class="na">id</span><span class="p">:</span> <span class="dl">"</span><span class="s2">title</span><span class="dl">"</span><span class="p">,</span>
+    <span class="na">alias</span><span class="p">:</span> <span class="dl">"</span><span class="s2">title</span><span class="dl">"</span><span class="p">,</span>
+    <span class="na">dataType</span><span class="p">:</span> <span class="nx">tableau</span><span class="p">.</span><span class="nx">dataTypeEnum</span><span class="p">.</span><span class="nx">string</span>
+<span class="p">}];</span>
+
+<span class="kd">var</span> <span class="nx">postsTable</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="na">joinOnly</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+    <span class="na">id</span><span class="p">:</span> <span class="dl">"</span><span class="s2">posts</span><span class="dl">"</span><span class="p">,</span>
+    <span class="na">alias</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Post Data</span><span class="dl">"</span><span class="p">,</span>
+    <span class="na">columns</span><span class="p">:</span> <span class="nx">posts_cols</span>
+<span class="p">};</span>
+</code></pre></div></div>
+
+<h3 id="get-data-for-tables">Get data for tables</h3>
+
+<p>Because the table that you want to filter depends on data from another table, you need to include additional logic to iterate over the filter values.
+The dependent table includes the following properties that you can use:</p>
+
+<ul>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">isJoinFiltered</code>. Whether the table can be used for join filtering.
+If the schema properties are set correctly, this equals true.</p>
+  </li>
+  <li>
+    <p><code class="language-plaintext highlighter-rouge">filterValues</code>. An array of the values to use for filtering.
+For example, an array of the user ID values to get data for.</p>
+  </li>
+</ul>
+
+<p>For example, you might iterate through the user ID filter values with the following <code class="language-plaintext highlighter-rouge">getData</code> function:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">myConnector</span><span class="p">.</span><span class="nx">getData</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">table</span><span class="p">,</span> <span class="nx">doneCallback</span><span class="p">)</span> <span class="p">{</span>
+<span class="kd">var</span> <span class="nx">tableData</span> <span class="o">=</span> <span class="p">[];</span>
+<span class="nf">if </span><span class="p">(</span><span class="nx">table</span><span class="p">.</span><span class="nx">tableInfo</span><span class="p">.</span><span class="nx">id</span> <span class="o">===</span> <span class="dl">"</span><span class="s2">users</span><span class="dl">"</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">$</span><span class="p">.</span><span class="nf">getJSON</span><span class="p">(</span><span class="dl">"</span><span class="s2">http://jsonplaceholder.typicode.com/users</span><span class="dl">"</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">resp</span><span class="p">)</span> <span class="p">{</span>
+	<span class="nf">for </span><span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">resp</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+		<span class="c1">// Only return the first 5 users to demonstrate filtering</span>
+	    <span class="nf">if </span><span class="p">(</span><span class="nx">resp</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">id</span> <span class="o">&lt;=</span> <span class="mi">5</span><span class="p">)</span> <span class="p">{</span>
+		<span class="nx">tableData</span><span class="p">.</span><span class="nf">push</span><span class="p">({</span>
+		    <span class="dl">"</span><span class="s2">id</span><span class="dl">"</span><span class="p">:</span> <span class="nx">resp</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">id</span><span class="p">,</span>
+		    <span class="dl">"</span><span class="s2">name</span><span class="dl">"</span><span class="p">:</span> <span class="nx">resp</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">name</span>
+		<span class="p">});</span>
+	    <span class="p">}</span>
+	<span class="p">}</span>
+
+	<span class="nx">table</span><span class="p">.</span><span class="nf">appendRows</span><span class="p">(</span><span class="nx">tableData</span><span class="p">);</span>
+	<span class="nf">doneCallback</span><span class="p">();</span>
+    <span class="p">});</span>
+<span class="p">}</span> <span class="k">else</span> <span class="nf">if </span><span class="p">(</span><span class="nx">table</span><span class="p">.</span><span class="nx">tableInfo</span><span class="p">.</span><span class="nx">id</span> <span class="o">===</span> <span class="dl">"</span><span class="s2">posts</span><span class="dl">"</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="nx">filterValues</span> <span class="o">=</span> <span class="nx">table</span><span class="p">.</span><span class="nx">filterValues</span><span class="p">;</span>
+
+    <span class="nf">if </span><span class="p">(</span><span class="o">!</span><span class="nx">table</span><span class="p">.</span><span class="nx">isJoinFiltered</span><span class="p">)</span> <span class="p">{</span>
+	<span class="nx">tableau</span><span class="p">.</span><span class="nf">abortWithError</span><span class="p">(</span><span class="dl">"</span><span class="s2">The table must be filtered first.</span><span class="dl">"</span><span class="p">);</span>
+	<span class="k">return</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="nf">if </span><span class="p">(</span><span class="nx">filterValues</span><span class="p">.</span><span class="nx">length</span> <span class="o">===</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+	<span class="nf">doneCallback</span><span class="p">();</span>
+	<span class="k">return</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="kd">var</span> <span class="nx">postFetches</span> <span class="o">=</span> <span class="p">[];</span>
+
+    <span class="c1">// Now that we have the ids of the filtered users,</span>
+    <span class="c1">// get the posts for only those users.</span>
+    <span class="nf">for </span><span class="p">(</span><span class="kd">var</span> <span class="nx">userId</span> <span class="k">in</span> <span class="nx">filterValues</span><span class="p">)</span> <span class="p">{</span>
+      <span class="kd">var</span> <span class="nx">postFetch</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Promise</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">resolve</span><span class="p">,</span> <span class="nx">reject</span><span class="p">)</span> <span class="p">{</span>
+	<span class="nx">$</span><span class="p">.</span><span class="nf">getJSON</span><span class="p">(</span><span class="dl">"</span><span class="s2">http://jsonplaceholder.typicode.com/posts?userId=</span><span class="dl">"</span> <span class="o">+</span> <span class="nx">userId</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">resp</span><span class="p">)</span> <span class="p">{</span>
+	  <span class="nf">for </span><span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">resp</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+	      <span class="nx">tableData</span><span class="p">.</span><span class="nf">push</span><span class="p">({</span>
+		  <span class="dl">"</span><span class="s2">id</span><span class="dl">"</span><span class="p">:</span> <span class="nx">resp</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">id</span><span class="p">,</span>
+		  <span class="dl">"</span><span class="s2">userId</span><span class="dl">"</span><span class="p">:</span> <span class="nx">resp</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">userId</span><span class="p">,</span>
+		  <span class="dl">"</span><span class="s2">title</span><span class="dl">"</span><span class="p">:</span> <span class="nx">resp</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">title</span>
+	      <span class="p">});</span>
+	  <span class="p">}</span>
+	  <span class="nx">table</span><span class="p">.</span><span class="nf">appendRows</span><span class="p">(</span><span class="nx">tableData</span><span class="p">);</span>
+	  <span class="nf">resolve</span><span class="p">();</span>
+	<span class="p">});</span>
+      <span class="p">});</span>
+
+      <span class="nx">postFetches</span><span class="p">.</span><span class="nf">push</span><span class="p">(</span><span class="nx">postFetch</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="nb">Promise</span><span class="p">.</span><span class="nf">all</span><span class="p">(</span><span class="nx">postFetches</span><span class="p">).</span><span class="nf">then</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">values</span><span class="p">)</span> <span class="p">{</span>
+      <span class="nf">doneCallback</span><span class="p">();</span>
+    <span class="p">})</span>
+<span class="p">}</span>
+<span class="p">};</span>
+
+</code></pre></div></div>
+
+<h3 id="full-example">Full example</h3>
+
+<p>The full code for the example above is displayed below:</p>
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+    <span class="c1">// Create the connector object</span>
+    <span class="kd">var</span> <span class="nx">myConnector</span> <span class="o">=</span> <span class="nx">tableau</span><span class="p">.</span><span class="nf">makeConnector</span><span class="p">();</span>
+
+    <span class="c1">// Define the schema</span>
+    <span class="nx">myConnector</span><span class="p">.</span><span class="nx">getSchema</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">schemaCallback</span><span class="p">)</span> <span class="p">{</span>
+        <span class="c1">// Schema for users</span>
+        <span class="kd">var</span> <span class="nx">users_cols</span> <span class="o">=</span> <span class="p">[{</span>
+            <span class="na">id</span><span class="p">:</span> <span class="dl">"</span><span class="s2">id</span><span class="dl">"</span><span class="p">,</span>
+            <span class="na">dataType</span><span class="p">:</span> <span class="nx">tableau</span><span class="p">.</span><span class="nx">dataTypeEnum</span><span class="p">.</span><span class="nx">string</span><span class="p">,</span>
+        <span class="p">},</span> <span class="p">{</span>
+            <span class="na">id</span><span class="p">:</span> <span class="dl">"</span><span class="s2">name</span><span class="dl">"</span><span class="p">,</span>
+            <span class="na">alias</span><span class="p">:</span> <span class="dl">"</span><span class="s2">name</span><span class="dl">"</span><span class="p">,</span>
+            <span class="na">dataType</span><span class="p">:</span> <span class="nx">tableau</span><span class="p">.</span><span class="nx">dataTypeEnum</span><span class="p">.</span><span class="nx">string</span>
+        <span class="p">}];</span>
+
+        <span class="kd">var</span> <span class="nx">usersTable</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="na">id</span><span class="p">:</span> <span class="dl">"</span><span class="s2">users</span><span class="dl">"</span><span class="p">,</span>
+            <span class="na">alias</span><span class="p">:</span> <span class="dl">"</span><span class="s2">User Data</span><span class="dl">"</span><span class="p">,</span>
+            <span class="na">columns</span><span class="p">:</span> <span class="nx">users_cols</span>
+        <span class="p">};</span>
+
+        <span class="c1">// Schema for posts</span>
+        <span class="kd">var</span> <span class="nx">posts_cols</span> <span class="o">=</span> <span class="p">[{</span>
+            <span class="na">id</span><span class="p">:</span> <span class="dl">"</span><span class="s2">id</span><span class="dl">"</span><span class="p">,</span>
+            <span class="na">dataType</span><span class="p">:</span> <span class="nx">tableau</span><span class="p">.</span><span class="nx">dataTypeEnum</span><span class="p">.</span><span class="nx">string</span>
+        <span class="p">},</span> <span class="p">{</span>
+            <span class="na">id</span><span class="p">:</span> <span class="dl">"</span><span class="s2">userId</span><span class="dl">"</span><span class="p">,</span>
+            <span class="na">alias</span><span class="p">:</span> <span class="dl">"</span><span class="s2">userId</span><span class="dl">"</span><span class="p">,</span>
+            <span class="na">dataType</span><span class="p">:</span> <span class="nx">tableau</span><span class="p">.</span><span class="nx">dataTypeEnum</span><span class="p">.</span><span class="nx">string</span><span class="p">,</span>
+            <span class="na">filterable</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+            <span class="na">foreignKey</span><span class="p">:</span> <span class="p">{</span>
+                <span class="dl">"</span><span class="s2">tableId</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">users</span><span class="dl">"</span><span class="p">,</span>
+                <span class="dl">"</span><span class="s2">columnId</span><span class="dl">"</span><span class="p">:</span> <span class="dl">"</span><span class="s2">id</span><span class="dl">"</span>
+            <span class="p">}</span>
+        <span class="p">},</span> <span class="p">{</span>
+            <span class="na">id</span><span class="p">:</span> <span class="dl">"</span><span class="s2">title</span><span class="dl">"</span><span class="p">,</span>
+            <span class="na">alias</span><span class="p">:</span> <span class="dl">"</span><span class="s2">title</span><span class="dl">"</span><span class="p">,</span>
+            <span class="na">dataType</span><span class="p">:</span> <span class="nx">tableau</span><span class="p">.</span><span class="nx">dataTypeEnum</span><span class="p">.</span><span class="nx">string</span>
+        <span class="p">}];</span>
+
+        <span class="kd">var</span> <span class="nx">postsTable</span> <span class="o">=</span> <span class="p">{</span>
+            <span class="na">joinOnly</span><span class="p">:</span> <span class="kc">true</span><span class="p">,</span>
+            <span class="na">id</span><span class="p">:</span> <span class="dl">"</span><span class="s2">posts</span><span class="dl">"</span><span class="p">,</span>
+            <span class="na">alias</span><span class="p">:</span> <span class="dl">"</span><span class="s2">Post Data</span><span class="dl">"</span><span class="p">,</span>
+            <span class="na">columns</span><span class="p">:</span> <span class="nx">posts_cols</span>
+        <span class="p">};</span>
+
+        <span class="nf">schemaCallback</span><span class="p">([</span><span class="nx">usersTable</span><span class="p">,</span> <span class="nx">postsTable</span><span class="p">]);</span>
+    <span class="p">};</span>
+
+    <span class="c1">// Download the data</span>
+    <span class="nx">myConnector</span><span class="p">.</span><span class="nx">getData</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">table</span><span class="p">,</span> <span class="nx">doneCallback</span><span class="p">)</span> <span class="p">{</span>
+        <span class="kd">var</span> <span class="nx">tableData</span> <span class="o">=</span> <span class="p">[];</span>
+        <span class="nf">if </span><span class="p">(</span><span class="nx">table</span><span class="p">.</span><span class="nx">tableInfo</span><span class="p">.</span><span class="nx">id</span> <span class="o">===</span> <span class="dl">"</span><span class="s2">users</span><span class="dl">"</span><span class="p">)</span> <span class="p">{</span>
+            <span class="nx">$</span><span class="p">.</span><span class="nf">getJSON</span><span class="p">(</span><span class="dl">"</span><span class="s2">http://jsonplaceholder.typicode.com/users</span><span class="dl">"</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">resp</span><span class="p">)</span> <span class="p">{</span>
+                <span class="nf">for </span><span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">resp</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+					<span class="c1">// Only return the first 5 users to demonstrate filtering</span>
+                    <span class="nf">if </span><span class="p">(</span><span class="nx">resp</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">id</span> <span class="o">&lt;=</span> <span class="mi">5</span><span class="p">)</span> <span class="p">{</span>
+                        <span class="nx">tableData</span><span class="p">.</span><span class="nf">push</span><span class="p">({</span>
+                            <span class="dl">"</span><span class="s2">id</span><span class="dl">"</span><span class="p">:</span> <span class="nx">resp</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">id</span><span class="p">,</span>
+                            <span class="dl">"</span><span class="s2">name</span><span class="dl">"</span><span class="p">:</span> <span class="nx">resp</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">name</span>
+                        <span class="p">});</span>
+                    <span class="p">}</span>
+                <span class="p">}</span>
+
+                <span class="nx">table</span><span class="p">.</span><span class="nf">appendRows</span><span class="p">(</span><span class="nx">tableData</span><span class="p">);</span>
+                <span class="nf">doneCallback</span><span class="p">();</span>
+            <span class="p">});</span>
+        <span class="p">}</span> <span class="k">else</span> <span class="nf">if </span><span class="p">(</span><span class="nx">table</span><span class="p">.</span><span class="nx">tableInfo</span><span class="p">.</span><span class="nx">id</span> <span class="o">===</span> <span class="dl">"</span><span class="s2">posts</span><span class="dl">"</span><span class="p">)</span> <span class="p">{</span>
+            <span class="kd">var</span> <span class="nx">filterValues</span> <span class="o">=</span> <span class="nx">table</span><span class="p">.</span><span class="nx">filterValues</span><span class="p">;</span>
+
+            <span class="nf">if </span><span class="p">(</span><span class="o">!</span><span class="nx">table</span><span class="p">.</span><span class="nx">isJoinFiltered</span><span class="p">)</span> <span class="p">{</span>
+                <span class="nx">tableau</span><span class="p">.</span><span class="nf">abortWithError</span><span class="p">(</span><span class="dl">"</span><span class="s2">The table must be filtered first.</span><span class="dl">"</span><span class="p">);</span>
+                <span class="k">return</span><span class="p">;</span>
+            <span class="p">}</span>
+
+            <span class="nf">if </span><span class="p">(</span><span class="nx">filterValues</span><span class="p">.</span><span class="nx">length</span> <span class="o">===</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+                <span class="nf">doneCallback</span><span class="p">();</span>
+                <span class="k">return</span><span class="p">;</span>
+            <span class="p">}</span>
+
+            <span class="kd">var</span> <span class="nx">postFetches</span> <span class="o">=</span> <span class="p">[];</span>
+
+            <span class="c1">// Now that we have the ids of the filtered users,</span>
+            <span class="c1">// get the posts for only those users.</span>
+            <span class="nf">for </span><span class="p">(</span><span class="kd">var</span> <span class="nx">userId</span> <span class="k">in</span> <span class="nx">filterValues</span><span class="p">)</span> <span class="p">{</span>
+              <span class="kd">var</span> <span class="nx">postFetch</span> <span class="o">=</span> <span class="k">new</span> <span class="nc">Promise</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">resolve</span><span class="p">,</span> <span class="nx">reject</span><span class="p">)</span> <span class="p">{</span>
+                <span class="nx">$</span><span class="p">.</span><span class="nf">getJSON</span><span class="p">(</span><span class="dl">"</span><span class="s2">http://jsonplaceholder.typicode.com/posts?userId=</span><span class="dl">"</span> <span class="o">+</span> <span class="nx">userId</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">resp</span><span class="p">)</span> <span class="p">{</span>
+                  <span class="nf">for </span><span class="p">(</span><span class="kd">var</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">resp</span><span class="p">.</span><span class="nx">length</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+                      <span class="nx">tableData</span><span class="p">.</span><span class="nf">push</span><span class="p">({</span>
+                          <span class="dl">"</span><span class="s2">id</span><span class="dl">"</span><span class="p">:</span> <span class="nx">resp</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">id</span><span class="p">,</span>
+                          <span class="dl">"</span><span class="s2">userId</span><span class="dl">"</span><span class="p">:</span> <span class="nx">resp</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">userId</span><span class="p">,</span>
+                          <span class="dl">"</span><span class="s2">title</span><span class="dl">"</span><span class="p">:</span> <span class="nx">resp</span><span class="p">[</span><span class="nx">i</span><span class="p">].</span><span class="nx">title</span>
+                      <span class="p">});</span>
+                  <span class="p">}</span>
+                  <span class="nx">table</span><span class="p">.</span><span class="nf">appendRows</span><span class="p">(</span><span class="nx">tableData</span><span class="p">);</span>
+                  <span class="nf">resolve</span><span class="p">();</span>
+                <span class="p">});</span>
+              <span class="p">});</span>
+
+              <span class="nx">postFetches</span><span class="p">.</span><span class="nf">push</span><span class="p">(</span><span class="nx">postFetch</span><span class="p">);</span>
+            <span class="p">}</span>
+
+            <span class="nb">Promise</span><span class="p">.</span><span class="nf">all</span><span class="p">(</span><span class="nx">postFetches</span><span class="p">).</span><span class="nf">then</span><span class="p">(</span><span class="kd">function</span><span class="p">(</span><span class="nx">values</span><span class="p">)</span> <span class="p">{</span>
+              <span class="nf">doneCallback</span><span class="p">();</span>
+            <span class="p">})</span>
+        <span class="p">}</span>
+    <span class="p">};</span>
+
+    <span class="nx">tableau</span><span class="p">.</span><span class="nf">registerConnector</span><span class="p">(</span><span class="nx">myConnector</span><span class="p">);</span>
+
+    <span class="c1">// Create event listeners for when the user submits the form</span>
+    <span class="nf">$</span><span class="p">(</span><span class="nb">document</span><span class="p">).</span><span class="nf">ready</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+        <span class="nf">$</span><span class="p">(</span><span class="dl">"</span><span class="s2">#submitButton</span><span class="dl">"</span><span class="p">).</span><span class="nf">click</span><span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+            <span class="nx">tableau</span><span class="p">.</span><span class="nx">connectionName</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">JSONPlaceholder</span><span class="dl">"</span><span class="p">;</span> <span class="c1">// This will be the data source name in Tableau</span>
+            <span class="nx">tableau</span><span class="p">.</span><span class="nf">submit</span><span class="p">();</span> <span class="c1">// This sends the connector object to Tableau</span>
+        <span class="p">});</span>
+    <span class="p">});</span>
+<span class="p">})();</span>
+</code></pre></div></div>
+
+            <!-- Footer -->
+<footer>
+    <div class="row">
+            <hr class="footer-hr">
+            <p>This site is open source. Suggestions and pull requests are welcome on our <a href="https://github.com/tableau/webdataconnector">GitHub page</a>.</p>
+            <p><a href="https://www.tableau.com/en-us/legal" class="aLegal">LEGAL</a> <a href="https://www.salesforce.com/company/privacy/" class="aLegal">PRIVACY</a> &copy; 2003&ndash;<script>document.write(new Date().getFullYear())</script> TABLEAU SOFTWARE LLC. ALL RIGHTS RESERVED</p>
+            <sub>Documentation last generated on: 2023-03-07 13:27:13 -0800</sub>
+    </div>
+</footer>
+
+        </div>
+    </div>
+</body>
+
+</html>
