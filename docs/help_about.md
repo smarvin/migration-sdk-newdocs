@@ -1,5 +1,6 @@
 ---
 title: About Tableau Help
+layout: docs
 ---
 
 ## Addressing Implicit Bias in Technical Language

@@ -1,6 +1,7 @@
 ---
 title: Installation Instructions
 description: How to install and configure the Tableau Migration SDK.
+layout: docs
 ---
 
 ## Python

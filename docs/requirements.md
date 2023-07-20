@@ -1,6 +1,7 @@
 ---
 title: Requirements
 description: Platform, hardware, and programming language requirements for using the Tableau Migration SDK.
+layout: docs
 ---
 
 The Migration SDK is available for Python and C# (.NET?) supporting Windows and Linux each. Depending on the language, installations may differ. This page contains the detailed requirements and installation instructions for all deployment configurations.

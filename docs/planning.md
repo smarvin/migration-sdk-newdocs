@@ -1,6 +1,7 @@
 ---
 title: Planning Your Migration
 description: Some considerations before you begin using the Tableau Migration SDK.
+layout: docs
 ---
 
 ## Differences between Tableau Server and Tableau Cloud

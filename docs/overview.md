@@ -1,6 +1,7 @@
 ---
 title: Migration SDK Overview
 description: An overview of the Tableau Migration SDK, including what the SDK can and cannot do.
+layout: docs
 ---
 Customers worldwide are migrating to Tableau Cloud to take advantage of the innovation, reduced overhead, security and scalability of Tableau’s managed data service. The Migration SDK helps you migrate to Tableau Cloud in a seamless and predictable way. You can leverage the Migration SDK to 
 * Migrate Users and Groups
