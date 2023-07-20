@@ -21,6 +21,7 @@ kramdown:
 # Include SEO file for Google rich results
 gems:
   - jekyll-seo-tag
+  - jekyll-mermaid
 
 # Exclude
 exclude: ['node_modules', 'vendor']
