@@ -1,5 +1,5 @@
 ---
-title: Migration SDK Overview
+title: Tableau Migration SDK Overview
 description: An overview of the Tableau Migration SDK, including what the SDK can and cannot do.
 layout: docs
 ---
@@ -24,3 +24,36 @@ The Migration SDK libraries are available in both Python and .NET. It can be run
 Need to create a list of un-supported content types and point to manual processes of re-creation and third-parties who provide offerings. Include in this list aspects of the migration (pre-environment screens, matching of content, verification of migration, etc)
 
 For details about supported platforms and hardware requirements, see [Requirement](./requirements.md).
+
+
+<script type="application/ld+json">
+{
+  "@context": "http://schema.org",
+  "@type": "Article",
+  "mainEntityOfPage": {
+    "@type": "WebPage",
+    "@id": "https://www.example.com/article"
+  },
+  "headline": "Tableau Migration SDK Overview",
+  "image": [
+    "https://www.example.com/images/article-thumbnail.jpg"
+  ],
+  "datePublished": "2023-07-24",
+  "dateModified": "2023-07-24",
+  "author": {
+    "@type": "Person",
+    "name": "Scot Marvin"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "Tableau",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://help.tableau.com/current/online/en-us/Resources/tableau-logo.png"
+    }
+  },
+  "description": "An overview of the Tableau Migration SDK, including what the SDK can and cannot do",
+  "articleBody": "Customers worldwide are migrating to Tableau Cloud to take advantage of the innovation, reduced overhead, security and scalability of Tableau’s managed data service. The Migration SDK helps you migrate to Tableau Cloud in a seamless and predictable way."
+}
+</script>
+
