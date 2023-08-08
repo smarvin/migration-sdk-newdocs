@@ -32,17 +32,14 @@ For details about supported platforms and hardware requirements, see [Requiremen
   "@type": "Article",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://www.example.com/article"
+    "@id": "https://smarvin.github.io/migration-sdk-newdocs/docs/overview.html"
   },
   "headline": "Tableau Migration SDK Overview",
-  "image": [
-    "https://www.example.com/images/article-thumbnail.jpg"
-  ],
   "datePublished": "2023-07-24",
   "dateModified": "2023-07-24",
   "author": {
     "@type": "Person",
-    "name": "Scot Marvin"
+    "name": "Tableau"
   },
   "publisher": {
     "@type": "Organization",
@@ -53,7 +50,7 @@ For details about supported platforms and hardware requirements, see [Requiremen
     }
   },
   "description": "An overview of the Tableau Migration SDK, including what the SDK can and cannot do",
-  "articleBody": "Customers worldwide are migrating to Tableau Cloud to take advantage of the innovation, reduced overhead, security and scalability of Tableau’s managed data service. The Migration SDK helps you migrate to Tableau Cloud in a seamless and predictable way."
+  "articleBody": "Customers worldwide are migrating to Tableau Cloud to take advantage of the innovation, reduced overhead, security, and scalability of Tableau’s managed data service. The Migration SDK helps you migrate to Tableau Cloud in a seamless and predictable way."
 }
 </script>
 
